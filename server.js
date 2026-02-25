@@ -15,6 +15,15 @@ const donationRoutes = require('./routes/donation');
 const app = express();
 const passport = require('passport');
 
+//cors
+app.use(
+  cors({
+    origin: "https://disaster-relief-frontend-silk.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true
+  })
+);
+
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
