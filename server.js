@@ -18,7 +18,7 @@ const passport = require('passport');
 //cors
 app.use(
   cors({
-    origin: "https://disaster-relief-frontend-silk.vercel.app",
+    origin: "https://disaster-relief-frontend-silk.vercel.app/",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true
   })
